@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="icon" type="image/png" href="favicon.png">
+		<link rel="stylesheet" href="style.css">
+		<title>Has Jeff Bezos Decided to End World Hunger Today?</title>
+	</head>
+	<body>
+		<div id="no">no</div>
+		<div id="label">estimated number of deaths caused by hunger today:</div>
+		<div id="number">25000</div>
+	</body>
+	<script type="text/javascript">
+		setDeathCounter();
+		setInterval(function(){
+			setDeathCounter();
+		}, 1000);
+
+		function setDeathCounter(){
+			const date = new Date();
+			document.getElementById("number").innerHTML = ((((date.getHours()*60+date.getMinutes())*60+date.getSeconds()) * 25000)/86400).toFixed(0)
+		}
+	</script>
+</html>
