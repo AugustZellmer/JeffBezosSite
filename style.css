@@ -61,6 +61,29 @@ body{
 
 #footerText{
     margin: auto;
-    padding: 40px;
     max-width: 1500px;
+    padding: 40px 40px 0 40px;
+}
+
+#footerButtons{
+    margin: 20px 0 40px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: auto auto;
+}
+
+a{
+    grid-column: 2 / span 1;
+    width: 100%;
+    margin-top: 20px;
+}
+
+button{
+    padding: 10px 20px;
+    border-radius: 4px;
+    width: 100%;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
 }
