@@ -28,7 +28,11 @@ body{
 }
 
 .grow{
-    flex-grow: 1;
+    flex-grow: 9;
+}
+
+.grower{
+    flex-grow: 12;
 }
 
 .nogrow{
